@@ -1,0 +1,9 @@
+.wrapper {
+  height: 600px;
+  background-color: lightgray;
+  margin-top: 0;
+}
+
+.card-columns {
+  column-count: 4;
+}

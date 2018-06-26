@@ -1,0 +1,12 @@
+.navbar {
+  color: white;
+  background: rgb(4, 90, 37);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.brand-logo {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  font-size: 1em;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "SquareOne",
+    "image": "https://imgur.com/1bApDly"
+  },
+  {
+    "id": 2,
+    "name": "SquareTwo",
+    "image": "https://imgur.com/TVtPbuB"
+  },
+  {
+    "id": 3,
+    "name": "SquareThree",
+    "image": "https://imgur.com/fhWYPgT"
+  },
+  {
+    "id": 4,
+    "name": "SquareFour",
+    "image": "https://imgur.com/E1QfAWs"
+  },
+  {
+    "id": 5,
+    "name": "SquareFive",
+    "image": "https://imgur.com/BT98RtI"
+  },
+  {
+    "id": 6,
+    "name": "SquareSix",
+    "image": "https://imgur.com/Cnzercq"
+  },
+  {
+    "id": 7,
+    "name": "SquareSeven",
+    "image": "https://imgur.com/JRbTTFG"
+  },
+  {
+    "id": 8,
+    "name": "SquareEight",
+    "image": "https://imgur.com/ehWKYvf"
+  },
+  {
+    "id": 9,
+    "name": "SquareNine",
+    "image": "https://imgur.com/ctyVx7D"
+  },
+  {
+    "id": 10,
+    "name": "SquareTen",
+    "image": "https://imgur.com/k9Cyq8l"
+  },
+  {
+    "id": 11,
+    "name": "SquareEleven",
+    "image": "https://imgur.com/AR0zkpI"
+  },
+  {
+    "id": 12,
+    "name": "SquareTwelve",
+    "image": "https://imgur.com/WHPkSzr"
+  }
+]
