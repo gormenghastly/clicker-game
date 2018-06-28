@@ -2,61 +2,73 @@
   {
     "id": 1,
     "name": "SquareOne",
-    "image": "https://imgur.com/1bApDly"
+    "image": "https://imgur.com/1bApDly.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 2,
     "name": "SquareTwo",
-    "image": "https://imgur.com/TVtPbuB"
+    "image": "https://imgur.com/TVtPbuB.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 3,
     "name": "SquareThree",
-    "image": "https://imgur.com/fhWYPgT"
+    "image": "https://imgur.com/fhWYPgT.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 4,
     "name": "SquareFour",
-    "image": "https://imgur.com/E1QfAWs"
+    "image": "https://imgur.com/E1QfAWs.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 5,
     "name": "SquareFive",
-    "image": "https://imgur.com/BT98RtI"
+    "image": "https://imgur.com/BT98RtI.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 6,
     "name": "SquareSix",
-    "image": "https://imgur.com/Cnzercq"
+    "image": "https://imgur.com/Cnzercq.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 7,
     "name": "SquareSeven",
-    "image": "https://imgur.com/JRbTTFG"
+    "image": "https://imgur.com/JRbTTFG.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 8,
     "name": "SquareEight",
-    "image": "https://imgur.com/ehWKYvf"
+    "image": "https://imgur.com/ehWKYvf.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 9,
     "name": "SquareNine",
-    "image": "https://imgur.com/ctyVx7D"
+    "image": "https://imgur.com/ctyVx7D.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 10,
     "name": "SquareTen",
-    "image": "https://imgur.com/k9Cyq8l"
+    "image": "https://imgur.com/k9Cyq8l.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 11,
     "name": "SquareEleven",
-    "image": "https://imgur.com/AR0zkpI"
+    "image": "https://imgur.com/AR0zkpI.jpg",
+    "clickedPrevious": false
   },
   {
     "id": 12,
     "name": "SquareTwelve",
-    "image": "https://imgur.com/WHPkSzr"
+    "image": "https://imgur.com/WHPkSzr.jpg",
+    "clickedPrevious": false
   }
 ]

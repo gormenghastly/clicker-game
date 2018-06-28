@@ -4,45 +4,49 @@ import Wrapper from './components/Wrapper';
 import Jumbotron from './components/Jumbotron';
 import ImageCard from './components/ImageCard';
 import Footer from './components/Footer';
-import cards from './cards';
+import cards from './cards.json';
 
 class App extends Component {
   state = {
     currentScore: 0,
     topScore: 0,
-    imageCards: cards.map(card => {
-      card.clickedOnce = false;
-      return card;
-    })
+    imageCards: cards
   };
 
-  shuffleCards = cards => {
-    let newCards = cards;
-    for (var i = 0; i < newCards.length; i++) {
-      var rand = Math.floor(Math.random() * (i + 1));
-      newCards[i] = newCards[rand];
-      newCards[rand] = cards[i];
-    }
-    return newCards;
-  };
+  // cards.map(card => {
+  //   card.clickedPrevious = false;
+  //   return card;
+  // })
+
+  // shuffleCards = cards => {
+  //   let newCards = cards;
+  //   for (var i = 0; i < newCards.length; i++) {
+  //     var rand = Math.floor(Math.random() * (i + 1));
+  //     newCards[i] = newCards[rand];
+  //     newCards[rand] = cards[i];
+  //   }
+  //   return newCards;
+  // };
 
   handleImageClick = id => {
+    const imageOrder = this.state.imageCards;
     const imageCards = [...this.state.imageCards];
     let clickedCard = imageCards.find(card => card.id === id);
-    if (clickedCard.clickedOnce) {
+    console.log(clickedCard);
+    if (clickedCard.clickedPrevious) {
       this.endGame();
     } else {
-      clickedCard.clickedOnce = true;
+      clickedCard.clickedPrevious = true;
       this.setState({
         currentScore: this.state.currentScore + 1,
-        imageCards: this.shuffleCards(imageCards)
+        imageCards: imageOrder.sort(() => Math.random() - 0.5)
       });
     }
   };
 
   endGame() {
     const resetCards = this.state.imageCards.map(card => {
-      card.clickedOnce = false;
+      card.clickedPrevious = false;
       return card;
     });
     this.newTopScore();
@@ -65,7 +69,13 @@ class App extends Component {
         <Jumbotron />
         <Wrapper>
           {cards.map(card => (
-            <ImageCard key={card.id} {...card} click={this.handleImageClick} />
+            <ImageCard
+              key={card.id}
+              src={card.image}
+              alt={card.name}
+              clickedPrevious={card.clickedPrevious}
+              // onClick={this.handleImageClick}
+            />
           ))}
         </Wrapper>
         <Footer />

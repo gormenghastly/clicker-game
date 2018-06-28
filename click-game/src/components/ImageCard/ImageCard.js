@@ -4,7 +4,13 @@ import('./ImageCard.css');
 const ImageCard = props => (
   <div className="card">
     <div className="img-container">
-      <img alt={props.name} src={props.image} onClick={props.click} />
+      <img
+        alt={props.name}
+        src={props.src}
+        id={props.id}
+        clickedPrevious={props.clickedPrevious}
+        //onClick={() => props.click(props.id)}
+      />
     </div>
   </div>
 );
