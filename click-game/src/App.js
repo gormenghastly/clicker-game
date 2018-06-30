@@ -14,7 +14,7 @@ class App extends Component {
   };
 
   // cards.map(card => {
-  //   card.clickedPrevious = false;
+  //   card.clickedonce = false;
   //   return card;
   // })
 
@@ -33,10 +33,10 @@ class App extends Component {
     const imageCards = [...this.state.imageCards];
     let clickedCard = imageCards.find(card => card.id === id);
     console.log(clickedCard);
-    if (clickedCard.clickedPrevious) {
+    if (clickedCard.clickedonce) {
       this.endGame();
     } else {
-      clickedCard.clickedPrevious = true;
+      clickedCard.clickedonce = true;
       this.setState({
         currentScore: this.state.currentScore + 1,
         imageCards: imageOrder.sort(() => Math.random() - 0.5)
@@ -46,7 +46,7 @@ class App extends Component {
 
   endGame() {
     const resetCards = this.state.imageCards.map(card => {
-      card.clickedPrevious = false;
+      card.clickedonce = false;
       return card;
     });
     this.newTopScore();
@@ -73,7 +73,7 @@ class App extends Component {
               key={card.id}
               src={card.image}
               alt={card.name}
-              clickedPrevious={card.clickedPrevious}
+              clickedonce={card.clickedonce}
               // onClick={this.handleImageClick}
             />
           ))}

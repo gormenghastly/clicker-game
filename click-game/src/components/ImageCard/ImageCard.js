@@ -8,7 +8,7 @@ const ImageCard = props => (
         alt={props.name}
         src={props.src}
         id={props.id}
-        clickedPrevious={props.clickedPrevious}
+        data-clickedonce={props.clickedonce}
         //onClick={() => props.click(props.id)}
       />
     </div>
